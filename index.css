@@ -1,0 +1,40 @@
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.calculator {
+    background-image: url("https://picsum.photos/400?grayscale&blur=2");
+    border-radius: 50px;
+    text-align: center;  
+    height: 400px; 
+    width: 400px;
+    margin: 20px;
+}
+
+input {  
+    font-family: "Press Start 2P";
+    margin: 10px;
+    height: 50px; 
+    width: 80%;
+    font-size: xx-large;
+    border-radius: 100px;
+    text-align: center; 
+}
+
+button { 
+    font-family: "Press Start 2P";
+    font-weight: 400;
+    font-size: xx-large ;
+    font-style: normal;
+    background-color: darkorange;
+    color: black;
+    border-color: orange;
+    border-width: 5px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}

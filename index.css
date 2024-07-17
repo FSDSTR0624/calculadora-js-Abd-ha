@@ -1,0 +1,42 @@
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.calculator {
+    background-color: rgb(51, 51, 51);
+    border-radius: 50px;
+    text-align: center;  
+    height: 400px; 
+    width: 400px;
+    padding: 20px;
+}
+
+input {  
+    font-family: "Press Start 2P";
+    font-size: xx-large;
+    border-radius: 100px;
+    text-align: center;
+    margin: 10px;
+    height: 50px; 
+    width: 80%;
+    background-color:rgb(64, 107, 64); 
+    color: greenyellow;
+}
+
+button { 
+    font-family: "Press Start 2P";
+    font-weight: 400;
+    font-size: xx-large ;
+    font-style: normal;
+    background-color: darkorange;
+    color: rgb(51, 51, 51);
+    border-color: orange;
+    border-width: 5px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}

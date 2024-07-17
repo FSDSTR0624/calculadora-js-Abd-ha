@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>calculadora-js-abd-ha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<section class="calculator">
+    <div classname="in">
+      <input type="text" id="result" readonly >
+    </div>
+    <div classname="pad">
+    <div>
+        <button class="button" onclick="press('7')">7</button>
+        <button class="button" onclick="press('8')">8</button>
+        <button class="button" onclick="press('9')">9</button>
+        <button class="button" onclick="press('/')">/</button>
+    </div>
+    <div>
+        <button class="button" onclick="press('4')">4</button>
+        <button class="button" onclick="press('5')">5</button>
+        <button class="button" onclick="press('6')">6</button>
+        <button class="button" onclick="press('*')">*</button>
+    </div>
+    <div>
+        <button class="button" onclick="press('1')">1</button>
+        <button class="button" onclick="press('2')">2</button>
+        <button class="button" onclick="press('3')">3</button>
+        <button class="button" onclick="press('-')">-</button>
+    </div>
+    <div>
+        <button class="button" onclick="press('C')">C</button>
+        <button class="button" onclick="press('0')">0</button>
+        <button class="button" onclick="press('=')">=</button>
+        <button class="button" onclick="press('+')">+</button>
+    </div>
+  </div>
+</section>
+<script>
+    function press(value) {
+      let result = document.getElementById('result');
+      let currentValue = result.value;
+
+      if (value === '=') {
+        result.value = eval(currentValue);
+      } else if (value === 'C') {
+        result.value = '';
+      } else {
+        result.value = currentValue + value;
+      }
+    }
+</script>
+</script>
+</body>
+</html>
